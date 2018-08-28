@@ -673,10 +673,10 @@ defmodule Ecto.Changeset do
 
   Furthermore, if each side of the association is managed separately,
   it is preferable to use `put_assoc/3` and directly instruct Ecto how
-  the association should look like.
+  the association should appear.
 
   For example, imagine you are receiving a set of tags you want to
-  associate to an user. Those tags are meant to exist upfront. Using
+  associate to a user. Those tags are meant to exist upfront. Using
   `cast_assoc/3` won't work as desired because the tags are not managed
   alongside the user. In such cases, `put_assoc/3` will work as desired.
   With the given parameters:
